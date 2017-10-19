@@ -11,6 +11,11 @@ def plane_ticket(city, classType):
     return locations[city] * classType
 
 def rental_car_cost(days):
+    """
+    Input: days, as an integer
+
+    Calculate a cost for renting a car inlcuding any discounts
+    """
     costPerDay = 30
     totalCost = costPerDay*days
     if days > 7:
@@ -20,6 +25,10 @@ def rental_car_cost(days):
     return totalCost
 
 def total_cost(city, classType, days):
+    """
+    Inputs: city, as string; classType, as float; days, as float
+    Calculates total cost of a trip given the city and number of days.
+    """
     finalCost = 0
     finalCost += hotel_cost(days)
     finalCost += rental_car_cost(days)
