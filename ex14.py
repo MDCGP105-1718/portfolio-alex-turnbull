@@ -6,4 +6,6 @@ def fib(n):
     else:
         return fib(n-1)+fib(n-2)
 
-print(fib(int(input("Enter a number"))))
+userInput = int(input("Enter a number to input to get the Fibonacci sequence: "))
+for i in range(0,userInput):
+    print(fib(i))
